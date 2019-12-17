@@ -1,1 +1,1 @@
-docker build -t snowks:1.0.0 .
+docker build -t registry.cn-hangzhou.aliyuncs.com/snowks/snowks:1.0.0 .
