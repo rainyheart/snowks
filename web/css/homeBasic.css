@@ -62,7 +62,7 @@ a:hover {
   justify-content: center;
   align-items: center;
 
-  width: 60%;
+  width: 70%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -86,7 +86,7 @@ a:hover {
 }
 
 .contentTxt {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .footer-right {
