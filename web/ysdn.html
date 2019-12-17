@@ -9,7 +9,7 @@
 <style type="text/css">
 .snow-container {
   position: absolute;
-  height: 500px;
+  height: 100%;
   width: 100%;
   max-width: 100%;
   top: 0;
@@ -82,17 +82,23 @@
   }
 }
 
+.content {
+	left:50%; top:50%; 
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	position:absolute;
+}
 </style>
 </head>
 <body>
-	<div align="center" class="snow-container">
+	<div align="center" class="snow-container" >
 		<div class="snow foreground"></div>
 		<div class="snow foreground layered"></div>
 		<div class="snow middleground"></div>
 		<div class="snow middleground layered"></div>
 		<div class="snow background"></div>
 		<div class="snow background layered"></div>
-		<div>
+		<div class="content">
 			<div>
 				<img src="./img/520.jpg" />
 			</div>
