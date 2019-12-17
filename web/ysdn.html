@@ -2,14 +2,99 @@
 <html manifest="snowks.appcache">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta http-equiv="Cache-Control" content="max-age=3600" />
 <title>生日礼物</title>
+<style type="text/css">
+.snow-container {
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  max-width: 100%;
+  top: 0;
+  overflow: hidden;
+  z-index: 2;
+  pointer-events: none;
+  background-color: #33CCFF;
+}
+
+.snow {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  -webkit-animation: snow linear infinite;
+          animation: snow linear infinite;
+}
+.snow.foreground {
+  background-image: url("./img/snow-large.png");
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+.snow.foreground.layered {
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
+}
+.snow.middleground {
+  background-image: url("./img/snow-medium.png");
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+.snow.middleground.layered {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+.snow.background {
+  background-image: url("./img/snow-small.png");
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+}
+.snow.background.layered {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+@-webkit-keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(15%, 100%, 0);
+            transform: translate3d(15%, 100%, 0);
+  }
+}
+
+@keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(15%, 100%, 0);
+            transform: translate3d(15%, 100%, 0);
+  }
+}
+
+</style>
 </head>
 <body>
-	<div align="center">
-		<div class="play_info">
-			<div class="play_photo">
+	<div align="center" class="snow-container">
+		<div class="snow foreground"></div>
+		<div class="snow foreground layered"></div>
+		<div class="snow middleground"></div>
+		<div class="snow middleground layered"></div>
+		<div class="snow background"></div>
+		<div class="snow background layered"></div>
+		<div>
+			<div>
 				<img src="./img/520.jpg" />
 			</div>
 		</div>
