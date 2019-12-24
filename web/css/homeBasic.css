@@ -92,3 +92,25 @@ a:hover {
 .footer-right {
   align-self: flex-end;
 }
+
+.copyright-up {
+  font-size: 10px;
+  position: absolute;
+  align-items: center;
+  bottom: 2%;
+  color: #000;
+  align-items: center;
+  z-index: 3;
+  height: 5%;
+}
+
+.copyright-down {
+  font-size: 10px;
+  position: absolute;
+  align-items: center;
+  bottom: 0%;
+  color: #000;
+  align-items: center;
+  z-index: 3;
+  height: 5%;
+}
