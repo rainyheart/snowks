@@ -1,1 +1,1 @@
-docker run -p 80:80 --name snowks -v /opt/web/snowks/media/:/usr/share/nginx/html/media/ -v /etc/localtime:/etc/localtime:ro -v /opt/nginx/logs:/etc/nginx/logs/ -d registry.cn-hangzhou.aliyuncs.com/snowks/snowks:1.0.0
+docker run -p 80:80 --name snowks -v /opt/web/snowks/media/:/usr/share/nginx/html/media/ -v /etc/localtime:/etc/localtime:ro -v /opt/nginx/logs:/etc/nginx/logs/ -d registry.cn-hangzhou.aliyuncs.com/snowks/snowks:1.1.0
