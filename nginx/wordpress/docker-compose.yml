@@ -1,0 +1,27 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress:5
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: snowkscp
+      WORDPRESS_DB_PASSWORD: 5201314snowmm
+      WORDPRESS_DB_NAME: snowkscpdb
+    volumes:
+      - /opt/wordpress/web:/var/www/html
+
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: snowkscpdb
+      MYSQL_USER: snowkscp
+      MYSQL_PASSWORD: 5201314snowmm
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - /opt/wordpress/mysql:/var/lib/mysql
