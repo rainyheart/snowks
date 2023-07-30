@@ -18,6 +18,7 @@ services:
         define('WP_SITEURL', 'http://blog.snowks.cn');      
     volumes:
       - /opt/wordpress/web:/var/www/html
+      - /opt/wordpress/config/php:/usr/local/etc/php
 
   db:
     image: mysql:5.7
