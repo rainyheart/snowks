@@ -1,4 +1,8 @@
 # snowks
+## nginx image build
+
+/root/github
+
 ## wordpress related
 
 docker-compose: /opt/snowks/wordpress/docker-compose.yml

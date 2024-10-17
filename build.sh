@@ -1,1 +1,1 @@
-docker build -t registry.cn-hangzhou.aliyuncs.com/snowks/snowks:1.1.0 .
+docker build -t registry.cn-hangzhou.aliyuncs.com/snowks/snowks:1.2.0 .
